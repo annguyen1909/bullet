@@ -403,6 +403,52 @@ html {
     font-size: 12px;
 }
 
+/* -------- Content Pages (Guides/Resources/Terms/Refund) -------- */
+body.content-page {
+    overflow-y: auto; /* allow natural page scroll on long-form pages */
+}
+
+.page-container {
+    display: block;
+    place-items: initial;
+    padding: 96px 24px 32px;
+    min-height: calc(100vh - var(--header-h));
+}
+
+.content-card {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.prose {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.prose .title { margin-bottom: 8px; }
+.prose .subtitle, .prose .lead { color: var(--muted); margin: 0 0 16px; }
+
+.prose h1, .prose h2, .prose h3, .prose h4 { line-height: 1.3; }
+.prose h1 { font-size: 26px; margin: 18px 0 10px; }
+.prose h2 { font-size: 20px; margin: 22px 0 10px; }
+.prose h3 { font-size: 17px; margin: 18px 0 8px; color: #cdd7e6; }
+
+.prose p { margin: 0 0 12px; }
+.prose ul, .prose ol { margin: 6px 0 14px 18px; padding: 0; }
+.prose li { margin: 6px 0; }
+.prose a { word-break: break-word; }
+.prose hr { border: 0; border-top: 1px solid var(--border); margin: 18px 0; opacity: .7; }
+
+/* Ads and Affiliate CTAs */
+.ad-placeholder { display:block; margin:18px 0; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px dashed rgba(255,255,255,0.04); padding:14px; border-radius:8px; text-align:center; color:var(--muted); }
+.aff-ctas { display:flex; gap:12px; flex-wrap:wrap; margin:16px 0; }
+.aff-cta { display:inline-block; padding:10px 14px; background:linear-gradient(135deg,#2b6ee6,#6ea8fe); color:#fff; text-decoration:none; border-radius:10px; font-weight:600; box-shadow:0 6px 18px rgba(46,117,255,0.18); }
+.aff-cta.secondary { background:transparent; border:1px solid var(--border); color:var(--text); box-shadow:none; }
+
+@media (max-width: 880px) {
+    .aff-ctas { flex-direction:column; }
+}
+
 @media (max-width: 640px) {
     .row {
         grid-template-columns: 1fr;
