@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Resume Bullet Improver</title>
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1 class="title">Privacy Policy</h1>
+        <p class="subtitle">Last updated: <span id="lastUpdated"></span></p>
+        <p>We respect your privacy. This site collects minimal data to operate usage analytics and improve the product.</p>
+        <h2 class="results-title">What we collect</h2>
+        <ul>
+          <li>Anonymous usage metrics (page views, button clicks).</li>
+          <li>Server logs with basic request data (IP, user agent) for security.</li>
+        </ul>
+        <h2 class="results-title">What we do not collect</h2>
+        <ul>
+          <li>We do not sell personal data.</li>
+          <li>We do not store your resume bullets beyond what’s needed to generate results.</li>
+        </ul>
+        <h2 class="results-title">Third‑party services</h2>
+        <p>We may use analytics providers such as Plausible or Google Analytics to understand usage trends.</p>
+        <p>For questions, contact: <a href="mailto:hello@your-domain.com">hello@your-domain.com</a></p>
+        <p><a href="/">← Back to Home</a></p>
+      </section>
+      <footer class="footer">
+        <a href="/privacy.html">Privacy</a> ·
+        <a href="/terms.html">Terms</a> ·
+        <a href="/refund.html">Refund & Usage</a>
+      </footer>
+    </main>
+    <script>
+      document.getElementById('lastUpdated').textContent = new Date().toISOString().slice(0,10);
+    </script>
+  </body>
+  </html>

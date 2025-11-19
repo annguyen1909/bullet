@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume Bullet Improver — Improve Resume Bullets Fast</title>
+    <meta name="description" content="Instantly rewrite your resume bullets into stronger, clearer, and metrics‑focused lines. Paste a bullet, pick a style, and get 3 improved versions." />
+    <link rel="canonical" href="/" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Resume Bullet Improver" />
+    <meta property="og:description" content="Rewrite resume bullets into 3 improved versions: Impactful, Technical, or Metrics‑Focused." />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Resume Bullet Improver" />
+    <meta name="twitter:description" content="Rewrite resume bullets into 3 improved versions: Impactful, Technical, or Metrics‑Focused." />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Resume Bullet Improver",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "All",
+        "description": "Instantly improve resume bullets with 3 better variations in different styles.",
+        "url": "/",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Fonts: paste your preferred font URL below (e.g., Google Fonts). -->
+    <!-- Example (Inter): Replace href to change fonts site-wide. -->
+    <link id="fontStylesheet" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" />
+    
+    <!-- Plausible Analytics (replace your-domain.com) -->
+    <script defer data-domain="your-domain.com" src="https://plausible.io/js/script.js"></script>
+    <!-- Lottie WebComponent for lightweight animations -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Optional: GA4 (uncomment and set your Measurement ID)
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXXX');
+    </script>
+    -->
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="Resume Bullet Improver home">
+          <img class="logo" src="/assets/logo-nobg.png" alt="" aria-hidden="true" />
+          <span>Bullet Improver</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="#app">Improve</a>
+          <a class="nav-link" href="/privacy.html">Privacy</a>
+          <a class="nav-link" href="/terms.html">Terms</a>
+          <a class="nav-link" href="/refund.html">Refund</a>
+          <a class="cta" href="https://annguyen1909.gumroad.com/l/nezlzc/" rel="noopener" target="_blank">Get Pro Templates</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="app" class="card">
+        <h1 class="title">Resume Bullet Improver</h1>
+        <p class="subtitle">Paste a resume bullet, pick a style, and get 3 improved versions.</p>
+
+        <div class="app-grid">
+          <div class="input-panel">
+            <label for="bullet" class="label">Your Bullet</label>
+            <textarea id="bullet" class="textarea" rows="8" placeholder="E.g., Led a team to build a new feature for the web app."></textarea>
+
+            <div class="row">
+              <div class="col">
+                <label for="style" class="label">Style</label>
+                <select id="style" class="select">
+                  <option value="Impactful">Impactful</option>
+                  <option value="Technical">Technical</option>
+                  <option value="Metrics-Focused">Metrics-Focused</option>
+                  <option value="Concise">Concise</option>
+                </select>
+              </div>
+              <div class="col btn-col">
+                <button id="improveBtn" class="button">
+                  <span class="btn-label">Improve Bullet</span>
+                  <lottie-player id="improveSpinner" src="https://assets10.lottiefiles.com/packages/lf20_p8bfn5to.json" background="transparent" speed="1" style="width:18px;height:18px;display:none" loop></lottie-player>
+                </button>
+              </div>
+            </div>
+
+            <div id="status" class="status" aria-live="polite"></div>
+            <div id="error" class="error" hidden></div>
+          </div>
+
+          <aside class="results-panel" id="resultsPanel" hidden>
+            <div id="results" class="results" hidden>
+              <h2 class="results-title">Improved Bullets</h2>
+              <ul id="resultsList" class="results-list"></ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <footer class="footer">
+        Minimal demo – works locally and on Render/Vercel ·
+        <a href="/privacy.html">Privacy</a> ·
+        <a href="/terms.html">Terms</a> ·
+        <a href="/refund.html">Refund & Usage</a>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
