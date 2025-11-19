@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Build output
+dist/
+
+# Editor directories and files
+.vscode/
+.DS_Store
+
+# Logs
+npm-debug.log*
+
+# MacOS
+*.DS_Store
+
+# Optional lockfiles
+package-lock.json
+
+# Vercel output
+.vercel/

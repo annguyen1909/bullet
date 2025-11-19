@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node api/improve.js",
     "dev": "node api/improve.js",
-    "zip": "powershell -NoProfile -ExecutionPolicy Bypass -File ./pack.ps1"
+    "zip": "powershell -NoProfile -ExecutionPolicy Bypass -File ./pack.ps1",
+    "vercel-build": "echo \"No build step for this project\""
   },
   "dependencies": {
     "cors": "^2.8.5",
