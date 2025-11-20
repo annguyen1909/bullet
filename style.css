@@ -42,7 +42,7 @@ html {
     min-height: calc(100vh - var(--header-h));
     display: grid;
     place-items: center;
-    padding: 96px 24px 24px;
+    padding: 84px 24px 24px;
     /* add extra breathing room below header */
 }
 
@@ -411,7 +411,7 @@ body.content-page {
 .page-container {
     display: block;
     place-items: initial;
-    padding: 96px 24px 32px;
+    padding: 84px 24px 24px;
     min-height: calc(100vh - var(--header-h));
 }
 
